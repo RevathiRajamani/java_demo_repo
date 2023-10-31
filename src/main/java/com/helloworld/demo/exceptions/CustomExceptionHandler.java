@@ -9,7 +9,7 @@ import com.helloworld.demo.models.ErrorMessage;
 
 @ControllerAdvice
 public class CustomExceptionHandler {
-	
+	// ExceptionHandler
 	@ExceptionHandler(value = { CustomException.class })
 	public ResponseEntity<ErrorMessage> exceptionHandler(CustomException e){
 		return new ResponseEntity<ErrorMessage>(
